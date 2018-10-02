@@ -14,7 +14,7 @@ class Client < ApplicationRecord
   
   has_many :lesson_payments, :through => :bookings
   
-  mount_uploader :photo, ClientUploader
+  #mount_uploader :photo, ClientUploader
   
   def name 
     "#{first_name} #{last_name}"

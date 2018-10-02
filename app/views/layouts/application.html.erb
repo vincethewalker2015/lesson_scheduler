@@ -9,6 +9,16 @@
   </head>
 
   <body>
+    <div class="navBar">
+        <p class="active"><%= link_to "Home", root_path %></p>
+        <p><%= link_to "Log in", login_path %></p>
+        <p><%= link_to "Clients", clients_path %></p>
+        <p><%= link_to "Lessons", lessons_path %></p>
+        <p><%= link_to "Trainers", trainers_path %></p>
+        <p><%= link_to "Create your Profile", new_user_path %></p>
+        <p><%= link_to "Log out", login_path, method: :delete %></p>
+    </div>
+    <%= render "shared/flash" %>
     <%= yield %>
   </body>
 </html>
