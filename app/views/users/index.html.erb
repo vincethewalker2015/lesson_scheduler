@@ -1,0 +1,16 @@
+<h2 align="center">All Users</h2>
+
+<div align="center">
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
